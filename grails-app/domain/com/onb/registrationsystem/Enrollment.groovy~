@@ -1,6 +1,7 @@
 package com.onb.registrationsystem
 
 class Enrollment {
+<<<<<<< HEAD
 	Date enrollmentDate
 	int schoolYear
 	String semester
@@ -11,6 +12,9 @@ class Enrollment {
 	
     static constraints = {
 		semester nullable:false, blank:false	
+=======
 
+    static constraints = {
+>>>>>>> e7f92a019d49af6d46d11443fa1e8e5853107f25
     }
 }

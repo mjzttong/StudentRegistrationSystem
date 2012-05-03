@@ -1,7 +1,5 @@
 package com.onb.registrationsystem
 
-
-
 import grails.test.mixin.*
 import org.junit.*
 

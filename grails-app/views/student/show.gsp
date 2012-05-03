@@ -50,6 +50,7 @@
 				</li>
 				</g:if>
 			
+<<<<<<< HEAD
 				<g:if test="${studentInstance?.course}">
 				<li class="fieldcontain">
 					<span id="course-label" class="property-label"><g:message code="student.course.label" default="Course" /></span>
@@ -70,6 +71,8 @@
 				</li>
 				</g:if>
 			
+=======
+>>>>>>> e7f92a019d49af6d46d11443fa1e8e5853107f25
 				<g:if test="${studentInstance?.level}">
 				<li class="fieldcontain">
 					<span id="level-label" class="property-label"><g:message code="student.level.label" default="Level" /></span>
@@ -88,6 +91,20 @@
 				</li>
 				</g:if>
 			
+<<<<<<< HEAD
+=======
+				<g:if test="${studentInstance?.teachers}">
+				<li class="fieldcontain">
+					<span id="teachers-label" class="property-label"><g:message code="student.teachers.label" default="Teachers" /></span>
+					
+						<g:each in="${studentInstance.teachers}" var="t">
+						<span class="property-value" aria-labelledby="teachers-label"><g:link controller="teacher" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+>>>>>>> e7f92a019d49af6d46d11443fa1e8e5853107f25
 			</ol>
 			<g:form>
 				<fieldset class="buttons">

@@ -30,8 +30,11 @@
 					
 						<g:sortableColumn property="lastName" title="${message(code: 'student.lastName.label', default: 'Last Name')}" />
 					
+<<<<<<< HEAD
 						<th><g:message code="student.course.label" default="Course" /></th>
 					
+=======
+>>>>>>> e7f92a019d49af6d46d11443fa1e8e5853107f25
 						<g:sortableColumn property="level" title="${message(code: 'student.level.label', default: 'Level')}" />
 					
 						<g:sortableColumn property="registrationDate" title="${message(code: 'student.registrationDate.label', default: 'Registration Date')}" />
@@ -48,8 +51,11 @@
 					
 						<td>${fieldValue(bean: studentInstance, field: "lastName")}</td>
 					
+<<<<<<< HEAD
 						<td>${fieldValue(bean: studentInstance, field: "course")}</td>
 					
+=======
+>>>>>>> e7f92a019d49af6d46d11443fa1e8e5853107f25
 						<td>${fieldValue(bean: studentInstance, field: "level")}</td>
 					
 						<td><g:formatDate date="${studentInstance.registrationDate}" /></td>

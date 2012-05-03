@@ -1,7 +1,25 @@
 package com.onb.registrationsystem
 
 class Teacher {
+    String teacherNumber
+    String firstName
+    String lastName
 
+<<<<<<< HEAD
+	static hasMany = [classes:Class]
+	
+=======
+>>>>>>> e7f92a019d49af6d46d11443fa1e8e5853107f25
     static constraints = {
+	teacherNumber nullable:false, blank:false, unique:true, size: 1..10
+	firstName nullable:false, blank:false
+	lastName nullable:false, blank:false
     }
+<<<<<<< HEAD
+	
+	String toString(){
+		return lastName+", "+ firstName;
+	}
+=======
+>>>>>>> e7f92a019d49af6d46d11443fa1e8e5853107f25
 }

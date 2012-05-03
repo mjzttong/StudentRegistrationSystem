@@ -12,8 +12,10 @@ class Teacher {
 	firstName nullable:false, blank:false
 	lastName nullable:false, blank:false
     }
+
 	
 	String toString(){
 		return lastName+", "+ firstName;
 	}
+
 }

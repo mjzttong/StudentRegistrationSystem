@@ -6,6 +6,7 @@ class Student{
     String lastName
 	int level
 	Date registrationDate
+
 	
 	static hasMany = [enrollments:Enrollment]
 	static hasOne = [course:Course]
@@ -19,4 +20,6 @@ class Student{
 	String toString(){
 		return studentNumber+"-"+lastName+", "+firstName
 	}
+
+
 }
