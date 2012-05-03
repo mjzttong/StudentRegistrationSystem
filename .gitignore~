@@ -1,0 +1,11 @@
+.settings/
+.classpath
+target/
+*.log
+classes
+*.class
+<<<<<<< HEAD
+web-app/WEB-INF/classes
+=======
+web-app/WEB-INF/classes
+>>>>>>> ec5049591deadc0b686d2f2fc6dbb72200d5b838
