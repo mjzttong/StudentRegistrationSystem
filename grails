@@ -1,0 +1,2 @@
+GRAILS_VERSION=2.0.3
+$GRAILS_PATH/grails-$GRAILS_VERSION/bin/grails $*
