@@ -1,7 +1,0 @@
-.settings/
-.classpath
-target/
-*.log
-classes
-*.class
-web-app/WEB-INF/classes

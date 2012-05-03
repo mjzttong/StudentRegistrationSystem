@@ -11,6 +11,5 @@ class Enrollment {
 	
     static constraints = {
 		semester nullable:false, blank:false	
-
     }
 }
