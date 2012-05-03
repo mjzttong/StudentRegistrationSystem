@@ -14,10 +14,7 @@ environments {
     development {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-        url = "jdbc:mysql://localhost/schoolregistration"
-        driverClassName = "com.mysql.jdbc.Driver"
-        username='root'
-        password=''
+        url = "jdbc:h2:mem:testDb;MVCC=TRUE"
         }
     }
     test {
