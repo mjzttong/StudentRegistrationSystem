@@ -9,7 +9,7 @@ class WelcomeController {
     def index() { 
 		if (springSecurityService.isLoggedIn()) {
 			if(SpringSecurityUtils.ifAllGranted("ROLE_STUDENT")){
-				forward controller: "student"
+				render view:"student"
 			}
 		}
 	}

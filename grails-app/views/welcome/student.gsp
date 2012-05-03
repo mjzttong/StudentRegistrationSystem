@@ -83,16 +83,10 @@
 	<body>
 		<div id="page-body" role="main">
 			<div id="controller-list" role="navigation">
-				<h2><strong>Admin Dashboard:</strong></h2>
+				<h2><strong>Student Dashboard:</strong></h2>
 				<ul>
-					<li class="controller"> <g:link controller = 'course'> Manage Courses </g:link></li>
-					<li class="controller"> <g:link controller = 'room'> Manage Rooms </g:link></li>
-					<li class="controller"> <g:link controller = 'section'> Manage Sections </g:link></li>
-					<li class="controller"> <g:link controller = 'student'> Manage Students </g:link></li>
-					<li class="controller"> <g:link controller = 'subject'> Manage Subjects </g:link></li>
-					<li class="controller"> <g:link controller = 'teacher'> Manage Teachers </g:link></li>
-					<li class="controller"> <g:link controller = 'timeSlot'> Manage Timeslots </g:link></li>
-					<li class="controller"> <g:link controller = 'logout'> Logout </g:link></li>
+					<li class="controller"> <g:link controller = 'enrollment'> Enlist Subjects </g:link></li>
+					<li class="controller"> <g:link controller = 'logout'> Logout</g:link></li>
 				</ul>
 			</div>
 		</div>

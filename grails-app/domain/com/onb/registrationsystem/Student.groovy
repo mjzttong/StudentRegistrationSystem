@@ -6,13 +6,14 @@ class Student extends User{
     String lastName
 	int level
 	Date registrationDate
-
-	static hasOne = [course:Course, enrollment:Enrollment]
+	Enrollment enrollment
+	static hasOne = [course:Course]
 	
     static constraints = {
 		studentNumber nullable:false, blank:false, unique:true, size: 1..10
 		firstName nullable:false, blank:false
 		lastName nullable:false, blank:false
+		enrollment nullable:true
     }
 	
 	String toString(){

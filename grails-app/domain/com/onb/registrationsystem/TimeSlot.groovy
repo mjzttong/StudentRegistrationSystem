@@ -9,8 +9,6 @@ class TimeSlot {
 	
     static constraints = {
 		days nullable:false, blank:false
-		start()
-		end()
     }
 	
 	String toString(){
