@@ -5,7 +5,7 @@ class TimeSlot {
 	int start
 	int end
 		
-	static hasMany = [classes:Class]
+	static hasMany = [classes:Section]
 	
     static constraints = {
 		days nullable:false, blank:false

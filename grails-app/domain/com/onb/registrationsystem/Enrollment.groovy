@@ -7,7 +7,7 @@ class Enrollment {
 	private BigDecimal totalFee
 	
 	static belongsTo = [student:Student]
-	static hasMany = [classes:Class]
+	static hasMany = [classes:Section]
 	
     static constraints = {
 		semester nullable:false, blank:false	

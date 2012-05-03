@@ -1,13 +1,13 @@
-<%@ page import="com.onb.registrationsystem.Class" %>
+<%@ page import="com.onb.registrationsystem.Section" %>
 <!doctype html>
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'class.label', default: 'Class')}" />
+		<g:set var="entityName" value="${message(code: 'section.label', default: 'Section')}" />
 		<title><g:message code="default.edit.label" args="[entityName]" /></title>
 	</head>
 	<body>
-		<a href="#edit-class" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		<a href="#edit-section" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>
 				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
@@ -15,21 +15,21 @@
 				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
 			</ul>
 		</div>
-		<div id="edit-class" class="content scaffold-edit" role="main">
+		<div id="edit-section" class="content scaffold-edit" role="main">
 			<h1><g:message code="default.edit.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
-			<g:hasErrors bean="${classInstance}">
+			<g:hasErrors bean="${sectionInstance}">
 			<ul class="errors" role="alert">
-				<g:eachError bean="${classInstance}" var="error">
+				<g:eachError bean="${sectionInstance}" var="error">
 				<li <g:if test="${error in org.springframework.validation.FieldError}">data-field-id="${error.field}"</g:if>><g:message error="${error}"/></li>
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
 			<g:form method="post" >
-				<g:hiddenField name="id" value="${classInstance?.id}" />
-				<g:hiddenField name="version" value="${classInstance?.version}" />
+				<g:hiddenField name="id" value="${sectionInstance?.id}" />
+				<g:hiddenField name="version" value="${sectionInstance?.version}" />
 				<fieldset class="form">
 					<g:render template="form"/>
 				</fieldset>

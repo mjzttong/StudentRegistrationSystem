@@ -1,6 +1,6 @@
 package com.onb.registrationsystem
 
-class Class {
+class Section {
 	final int MAX_STUDENTS = 30
 	
     static hasOne = [subject:Subject, teacher:Teacher, timeslot:TimeSlot, room:Room]

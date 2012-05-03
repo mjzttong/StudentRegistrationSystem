@@ -4,7 +4,7 @@ class Room {
 	String roomNumber
 	String building
 	
-	static hasMany = [classes:Class]
+	static hasMany = [classes:Section]
 	
     static constraints = {
 		roomNumber nullable:false, blank:false

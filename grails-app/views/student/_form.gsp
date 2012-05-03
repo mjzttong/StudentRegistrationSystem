@@ -2,6 +2,22 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'username', 'error')} required">
+	<label for="username">
+		<g:message code="student.username.label" default="Username" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="username" required="" value="${studentInstance?.username}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'password', 'error')} required">
+	<label for="password">
+		<g:message code="student.password.label" default="Password" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="password" required="" value="${studentInstance?.password}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'studentNumber', 'error')} required">
 	<label for="studentNumber">
 		<g:message code="student.studentNumber.label" default="Student Number" />
@@ -26,7 +42,22 @@
 	<g:textField name="lastName" required="" value="${studentInstance?.lastName}"/>
 </div>
 
-<<<<<<< HEAD
+<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'accountExpired', 'error')} ">
+	<label for="accountExpired">
+		<g:message code="student.accountExpired.label" default="Account Expired" />
+		
+	</label>
+	<g:checkBox name="accountExpired" value="${studentInstance?.accountExpired}" />
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'accountLocked', 'error')} ">
+	<label for="accountLocked">
+		<g:message code="student.accountLocked.label" default="Account Locked" />
+		
+	</label>
+	<g:checkBox name="accountLocked" value="${studentInstance?.accountLocked}" />
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'course', 'error')} required">
 	<label for="course">
 		<g:message code="student.course.label" default="Course" />
@@ -35,31 +66,36 @@
 	<g:select id="course" name="course.id" from="${com.onb.registrationsystem.Course.list()}" optionKey="id" required="" value="${studentInstance?.course?.id}" class="many-to-one"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'enrollments', 'error')} ">
-	<label for="enrollments">
-		<g:message code="student.enrollments.label" default="Enrollments" />
+<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'enabled', 'error')} ">
+	<label for="enabled">
+		<g:message code="student.enabled.label" default="Enabled" />
 		
 	</label>
-	
-<ul class="one-to-many">
-<g:each in="${studentInstance?.enrollments?}" var="e">
-    <li><g:link controller="enrollment" action="show" id="${e.id}">${e?.encodeAsHTML()}</g:link></li>
-</g:each>
-<li class="add">
-<g:link controller="enrollment" action="create" params="['student.id': studentInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'enrollment.label', default: 'Enrollment')])}</g:link>
-</li>
-</ul>
-
+	<g:checkBox name="enabled" value="${studentInstance?.enabled}" />
 </div>
 
-=======
->>>>>>> e7f92a019d49af6d46d11443fa1e8e5853107f25
+<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'enrollment', 'error')} required">
+	<label for="enrollment">
+		<g:message code="student.enrollment.label" default="Enrollment" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="enrollment" name="enrollment.id" from="${com.onb.registrationsystem.Enrollment.list()}" optionKey="id" required="" value="${studentInstance?.enrollment?.id}" class="many-to-one"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'level', 'error')} required">
 	<label for="level">
 		<g:message code="student.level.label" default="Level" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field type="number" name="level" required="" value="${fieldValue(bean: studentInstance, field: 'level')}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'passwordExpired', 'error')} ">
+	<label for="passwordExpired">
+		<g:message code="student.passwordExpired.label" default="Password Expired" />
+		
+	</label>
+	<g:checkBox name="passwordExpired" value="${studentInstance?.passwordExpired}" />
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'registrationDate', 'error')} required">
@@ -70,14 +106,3 @@
 	<g:datePicker name="registrationDate" precision="day"  value="${studentInstance?.registrationDate}"  />
 </div>
 
-<<<<<<< HEAD
-=======
-<div class="fieldcontain ${hasErrors(bean: studentInstance, field: 'teachers', 'error')} ">
-	<label for="teachers">
-		<g:message code="student.teachers.label" default="Teachers" />
-		
-	</label>
-	<g:select name="teachers" from="${com.onb.registrationsystem.Teacher.list()}" multiple="multiple" optionKey="id" size="5" value="${studentInstance?.teachers*.id}" class="many-to-many"/>
-</div>
-
->>>>>>> e7f92a019d49af6d46d11443fa1e8e5853107f25

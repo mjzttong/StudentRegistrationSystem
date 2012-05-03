@@ -37,7 +37,7 @@
 					<span id="classes-label" class="property-label"><g:message code="enrollment.classes.label" default="Classes" /></span>
 					
 						<g:each in="${enrollmentInstance.classes}" var="c">
-						<span class="property-value" aria-labelledby="classes-label"><g:link controller="class" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="classes-label"><g:link controller="section" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
 				</li>

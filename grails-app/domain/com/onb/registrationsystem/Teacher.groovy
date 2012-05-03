@@ -5,7 +5,7 @@ class Teacher {
     String firstName
     String lastName
 
-	static hasMany = [classes:Class]
+	static hasMany = [classes:Section]
 	
     static constraints = {
 	teacherNumber nullable:false, blank:false, unique:true, size: 1..10

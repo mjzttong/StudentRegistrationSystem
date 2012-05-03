@@ -101,15 +101,15 @@ grails.plugins.springsecurity.authority.className = 'com.onb.registrationsystem.
 grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptUrlMap
 
 grails.plugins.springsecurity.interceptUrlMap = [
-//	'/' : ['IS_AUTHENTICATED_ANONYMOUSLY'],
-//	"/image/**" : ['IS_AUTHENTICATED_ANONYMOUSLY'],
-//	'/js' : ['IS_AUTHENTICATED_ANONYMOUSLY'],
-//	"/css" : ['IS_AUTHENTICATED_ANONYMOUSLY'],
-//	"/images/**" : ['IS_AUTHENTICATED_ANONYMOUSLY'],
-//	"/login/**" : ['IS_AUTHENTICATED_ANONYMOUSLY'],
-//	"/logout/**" : ['IS_AUTHENTICATED_ANONYMOUSLY'],
-//
-//	"/**" : ['ROLE_ADMIN'],
-//	"/student/**" : ['ROLE_USER'],
-//	"/teacher/**" : ['ROLE_ADMIN']
+	'/' : ['IS_AUTHENTICATED_ANONYMOUSLY'],
+	"/image/**" : ['IS_AUTHENTICATED_ANONYMOUSLY'],
+	'/js' : ['IS_AUTHENTICATED_ANONYMOUSLY'],
+	"/css" : ['IS_AUTHENTICATED_ANONYMOUSLY'],
+	"/images/**" : ['IS_AUTHENTICATED_ANONYMOUSLY'],
+	"/login/**" : ['IS_AUTHENTICATED_ANONYMOUSLY'],
+	"/logout/**" : ['IS_AUTHENTICATED_ANONYMOUSLY'],
+
+	"/**" : ['ROLE_ADMIN'],
+	"/student/**" : ['ROLE_STUDENT'],
+	"/teacher/**" : ['ROLE_ADMIN']
 ]

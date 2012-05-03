@@ -5,7 +5,7 @@ class Subject {
 	String name
 	BigDecimal fee	
 	
-	static hasMany = [courses:Course, classes:Class]
+	static hasMany = [courses:Course, classes:Section]
 	static belongsTo = Course
 	
     static constraints = {

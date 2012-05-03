@@ -15,7 +15,7 @@
 		<g:message code="enrollment.classes.label" default="Classes" />
 		
 	</label>
-	<g:select name="classes" from="${com.onb.registrationsystem.Class.list()}" multiple="multiple" optionKey="id" size="5" value="${enrollmentInstance?.classes*.id}" class="many-to-many"/>
+	<g:select name="classes" from="${com.onb.registrationsystem.Section.list()}" multiple="multiple" optionKey="id" size="5" value="${enrollmentInstance?.classes*.id}" class="many-to-many"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: enrollmentInstance, field: 'enrollmentDate', 'error')} required">
